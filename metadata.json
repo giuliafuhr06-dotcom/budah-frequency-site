@@ -1,0 +1,6 @@
+{
+  "name": "Budah Frequency",
+  "description": "High-converting VSL sales landing page for Budah Frequency — 12 Solfeggio & healing frequency MP3 collection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes auroraFlow1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.15);
+    opacity: 0.55;
+  }
+}
+
+@keyframes auroraFlow2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-30px, 40px) scale(1.1);
+    opacity: 0.45;
+  }
+}
+
+@keyframes subtleGoldPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.35), 0 0 45px rgba(217, 119, 6, 0.2);
+    transform: translateY(0);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.6), 0 0 60px rgba(217, 119, 6, 0.35);
+    transform: translateY(-1px);
+  }
+}
+
+.animate-aurora-1 {
+  animation: auroraFlow1 18s ease-in-out infinite;
+}
+
+.animate-aurora-2 {
+  animation: auroraFlow2 22s ease-in-out infinite alternate;
+}
+
+.animate-gold-pulse {
+  animation: subtleGoldPulse 3s ease-in-out infinite;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.06), rgba(15, 23, 42, 0.65));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+}
